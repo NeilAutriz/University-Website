@@ -1,0 +1,23 @@
+.title-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    margin-top: 60px;
+}
+
+.title-container p{
+    text-align: center;
+    color: #212EA0;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 0 30px;
+}
+
+.title-container h2{
+    font-size: 32px;
+    color: #000F38;
+    text-transform: none;
+}
