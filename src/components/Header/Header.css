@@ -1,0 +1,53 @@
+
+/* <p> Our cutting-edge curriculum is designed to empower students with the knowledge, skills, and experiences needed to excel in the dynamic field of education margin 10px  auto 20px line height 1.4*/
+/* Dark arrow width 20 px  */
+
+.header-container{
+    margin-top: 30px;
+    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; 
+    background: linear-gradient(rgba(8, 0, 58, 0.7), rgba(8, 0, 58, 0.7)),url('../../assets//header.jpg');
+    color: white;
+    min-height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+
+.header-container h1{
+    font-size: 60px;
+    font-weight: 600;
+    max-width: 800px;
+    text-align: center;
+}
+
+.header-container p {
+    line-height: 1.4;
+    max-width: 680px;
+    text-align: center;
+    margin: 10px auto 20px;
+}
+
+.button-head{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.explore-button{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 160px;
+    padding: 10px;
+    border: none;
+    border-radius: 30px;
+}
+
+.dark-arrow-icon{
+    width: 20px;
+    margin-left: 8px;
+}
