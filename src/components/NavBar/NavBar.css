@@ -1,0 +1,50 @@
+/* Font -size 16 px */
+/* COlor #FFF */
+/* Button color - #212121 */
+/* Logo - 180px */
+/* Nav Color #yyy */
+
+.nav-container{
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    justify-content: space-around;
+    width: 100%;
+    padding: 4px;
+}
+
+.nav-list{
+    text-decoration: none;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-list-item{
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 15px;
+    cursor: pointer;
+}
+
+.nav-logo{
+    width: 180px;
+}
+
+.contact-button{
+    background-color: #fff;
+    color: #212121;
+    padding: 14px 25px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 30px;
+}
