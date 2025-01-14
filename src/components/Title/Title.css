@@ -10,14 +10,14 @@
 .title-container p{
     text-align: center;
     color: #212EA0;
-    font-size: 15px;
+    font-size: 25px;
     font-weight: 600;
     text-transform: uppercase;
     margin: 0 30px;
 }
 
 .title-container h2{
-    font-size: 32px;
+    font-size: 42px;
     color: #000F38;
     text-transform: none;
 }
