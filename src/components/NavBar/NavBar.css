@@ -5,7 +5,6 @@
 /* Nav Color #yyy */
 
 .nav-container{
-    background-color: #333;
     color: #fff;
     display: flex;
     align-items: center;
@@ -16,6 +15,11 @@
     justify-content: space-around;
     width: 100%;
     padding: 4px;
+}
+
+.dark-nav{
+    background-color: #212EA0;
+    transition: 0.5s;
 }
 
 .nav-list{
