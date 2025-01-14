@@ -1,0 +1,55 @@
+.about-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin: 100px auto;
+}
+
+.about-left{
+    flex-basis: 40%;
+    position: relative;
+}
+
+.about-image{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.about-right{
+    flex-basis: 56%;
+}
+
+.univ-deets{
+    display: flex;
+    align-items:baseline;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.about-icon-play{
+    width: 50px;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    z-index: 20;
+}
+
+.univ-deets h3{
+    font-weight: 600;
+    font-size: 16px;
+    color: #212EA0;
+}
+
+.univ-deets h2{
+    font-size: 35px;
+    color: #000F38;
+    margin: 10px;
+    max-width: 400px;
+}
+
+.univ-deets p{
+    color: #676767;
+    margin-bottom: 15px;
+}
