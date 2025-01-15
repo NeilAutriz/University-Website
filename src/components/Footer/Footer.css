@@ -1,0 +1,22 @@
+.footer-division{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    border-top: 2px solid #797979;
+    padding: 15px;
+}
+
+.terms-privacy{
+    list-style-type: none;
+    display: flex;
+    flex-basis: 20%;
+}
+
+.terms-privacy li{
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}

@@ -3,10 +3,34 @@ import messageIcon from '../../assets/msg-icon.png'
 import mailIcon from '../../assets/mail-icon.png'
 import locationIcon from '../../assets/location-icon.png'
 import phoneIcon from '../../assets/phone-icon.png'
-
-
+import React from "react";
 
 const Contact = () => {
+  const [result, setResult] = React.useState("");
+
+  const onSubmit = async (event) => {
+    event.preventDefault();
+    setResult("Sending....");
+    const formData = new FormData(event.target);
+
+    formData.append("access_key", "6fa728b7-a840-48e7-9c41-a3089981c73f");
+
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      body: formData
+    });
+
+    const data = await response.json();
+
+    if (data.success) {
+      setResult("Form Submitted Successfully");
+      event.target.reset();
+    } else {
+      console.log("Error", data);
+      setResult(data.message);
+    }
+  };
+
   return (
     <div className="contact-division">
         <div className="contact-left">
@@ -21,7 +45,7 @@ const Contact = () => {
             </ul>
         </div>
         <div className="contact-right">
-            <form className='contact-form'>
+            <form className='contact-form' onSubmit={onSubmit}>
                 <label>Your Name</label>
                 <input type='text' name='name' required placeholder='Enter your name' className='form-input'/>
                 <label>Phone Number</label>
@@ -31,8 +55,8 @@ const Contact = () => {
                 <label>Write your messages here</label>
                 <textarea rows="6" name='message' required placeholder='Enter your message' className='form-input'/>
                 <button className='submit-form-button'>Submit Now</button>
-
             </form>
+            <span>{result}</span>
         </div>
     </div>
       
