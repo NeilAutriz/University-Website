@@ -9,7 +9,7 @@ import programIcon3 from '../../assets/program-icon-3.png'
 
 const Programs = () => {
   return (
-    <div className='main-program-container'>
+    <div className='main-program-container' id='program'>
           <div className="program">
               <img src={program1} alt='program' />
               <div className="program-indiv-overlay">

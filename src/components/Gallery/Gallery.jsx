@@ -7,7 +7,7 @@ import whiteArrow from '../../assets/white-arrow.png'
 
 const Gallery = () => {
   return (
-    <div className='gallery-container'>
+    <div className='gallery-container' id='gallery'>
       <div className="photo-gallery">
         <img src={gallery1} className='photoIndiv'/>
         <img src={gallery2} className='photoIndiv'/>
