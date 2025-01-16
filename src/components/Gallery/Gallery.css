@@ -38,3 +38,15 @@
     width: 20px;
     margin-left: 5px;
 }
+
+/* Improved responsiveness */
+
+@media (max-width: 800px){
+    .photo-gallery{
+        flex-wrap: wrap;
+    }
+    .photoIndiv{
+        width: 48%;
+        margin-bottom: 20px;
+    }
+}

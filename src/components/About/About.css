@@ -54,3 +54,18 @@
     margin-bottom: 15px;
     font-size: 16px;
 }
+
+/* Improved flexibility and responsiveness of the code. */
+@media (max-width: 800px) {
+    .about-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .about-left{
+        flex-basis: 100%;
+        order: 2;
+    }
+    .about-right{
+        flex-basis: 100%;
+    }
+}

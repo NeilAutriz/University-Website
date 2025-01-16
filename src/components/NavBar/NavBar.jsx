@@ -17,7 +17,6 @@ const NavBar = () => {
 
   const showMenu = () => {
     toggleMenu ? setToggleMenu(false) : setToggleMenu(true)
-    console.log(toggleMenu)
   }
 
   return (
