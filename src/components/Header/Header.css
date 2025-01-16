@@ -53,3 +53,38 @@
     width: 20px;
     margin-left: 8px;
 }
+
+
+/* Improved responsiveness */
+
+@media (max-width: 900px){
+    .header-container h1{
+        font-size: 45px;
+        max-width: 600px;
+    }
+    .header-container p{
+        max-width: 650px;
+        font-size: 16px;
+    }
+    .explore-button{
+        width: 150px;
+        padding: 7px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 700px){
+    .header-container h1{
+        font-size: 37px;
+        max-width: 500px;
+    }
+    .header-container p{
+        max-width: 560px;
+        font-size: 14px;
+    }
+    .explore-button{
+        width: 130px;
+        padding: 7px;
+        font-size: 14px;
+    }
+}
