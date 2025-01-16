@@ -52,3 +52,58 @@
     font-size: 16px;
     border-radius: 30px;
 }
+
+.menu-icon{
+    width: 25px;
+    display: none;
+}
+
+/* Responsiveness in numerous devices */
+@media (max-width: 840px){
+    .nav-list-item{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 5px;
+        font-size: 16px;
+    }
+    .contact-button{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 700px){
+    .nav-list{
+        position: fixed;
+        top: 0; 
+        right: -500px;
+        bottom: 0;
+        background-color: #212EA0;
+        color: white;
+        width: 200px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        transition: 0.5s;
+    }
+    .nav-list li{
+        display: block;
+        margin: 25px 40px;
+    }
+    .menu-icon{
+        display: block;
+        z-index: 20;
+        position: fixed;
+        top: 14px;
+        right: 30px;
+        cursor: pointer;
+    }
+    .show-menu-icon{
+        right: 0;
+    }
+}

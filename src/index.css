@@ -25,3 +25,10 @@ a{
   justify-content: center;
   flex-direction: column;
 }
+
+/* For improved responsiveness/flexibility */
+@media (max-width: 1000px){
+  .main-content-container{
+    margin: 0 20px;
+  }
+}
