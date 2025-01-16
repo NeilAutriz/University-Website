@@ -2,12 +2,14 @@ import '../About/About.css'
 import about from '../../assets/about.png'
 import playIcon from '../../assets/play-icon.png'
 
-const About = () => {
+const About = ({handlePlayingVideo}) => {
   return (
     <div className="about-container" id='about'>
         <div className="about-left">
             <img src={about} className='about-image'/>
-            <img src={playIcon} className='about-icon-play'/>
+            <button onClick={handlePlayingVideo} className='video-play-button'>
+              <img src={playIcon} className='about-icon-play'/>
+            </button>
         </div>
         <div className="about-right">
             <div className="univ-deets">
